@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::selection{
+    color: white;
+    background: black;
+}
+body{
+    /* font-family: futura; */
+}
+.main{
+    padding: 1vw 1vw;
+    /* background: red; */
+    min-height: 100vh;
+    width: 100%;
+    /* overflow: hidden; */
+}
+#page1{
+    height: 75vh;
+    /* background: green; */
+    font-family: futura;
+    padding-bottom: -10vh;
+}
+.main #page1 #nav{
+    height: 20vh;
+}
+.main #page1 #main-text{
+    height: 60vh;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -20vw;
+}
+.main #page1 #main-text h1{
+    font-size: 15vw;
+    letter-spacing: -0.5vw;
+}
+.main #page1 #main-text #change{
+    line-height: 5.5vw;
+}
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    /* background: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0 5vw;
+    font-family: futura;
+    overflow: hidden;
+}
+
+#page2 img{
+    height: 80vh;
+    max-width: 100%;
+    position: relative;
+}
+    #circle{
+        position: absolute;
+        top: 15%;
+        left: 58%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #page2 #buy-circle{
+        animation: rotateText 10s linear infinite;
+        position: relative;
+        width: 200px;
+        height: 200px;
+        /* border: 1px solid red; */
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #page2 #buy-circle #border-text{
+        position: absolute;
+        top: 8%;
+    }
+
+    #page2 #buy-circle #border-text span{
+        font-family: futura;
+        position: absolute;
+        font-size: 0.8em;
+        transform-origin: 0 80px;
+    }
+    @keyframes rotateText{
+        0% {
+            transform: rotate(360deg);
+        }
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+    #page2 #circle #buy-center{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-weight: bolder;
+        font-size: 25px;
+    }
+
+
+
+#page3{
+    display: flex;
+    flex-direction: column;
+    padding: 0 1vw;
+    /* background: blueviolet; */
+}
+
+#quote{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    color: black;
+}
+
+.posters{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+    margin-top: 15px;
+}
+.posters .poster{
+    height: 100%;
+    width: 32.5%;
+}
+.posters .poster img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+        #circle{
+            top: 25%;
+            left: 60%;
+        }
+        #page2 img {
+            max-width: none;
+            width: 80%;
+            height: 60vh;
+          }
+      }
+@media screen and (max-width: 600px) {
+    #circle{
+        top: 30%;
+        left: 50%;
+    }
+    #page2 img {
+      max-width: none;
+      width: 80%;
+      height: 50vh;
+    }
+    #page2 #buy-circle{
+        width: 160px;
+        height: 160px;
+    }
+    #page2 #buy-circle #border-text span{
+        font-size: 0.8em;
+        transform-origin: 0 70px;
+    }
+  }
+
+
+  
