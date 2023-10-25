@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -20,7 +22,7 @@
             </div>
         </div>
         <div id="page2">
-            <img src="./assets/book.png" alt="" srcset="">
+            <img data-scroll data-scroll-speed="2" src="./assets/book.png" alt="" srcset="">
             <div id="circle">
                 <div id="buy-center">
                     BUY
@@ -41,21 +43,44 @@
             <hr>
             <div class="posters">
                 <div class="poster" id="poster1">
-                    <img src="https://cdn.sanity.io/images/w8f1ak3c/production/a54b969c847029357a401e2d8ea5d52abd5451d0-2250x1500.jpg/DSC0051_Dexter%20Kim%20copy.jpg?rect=675,0,900,1500&w=640&h=1067&fit=min&auto=format"
+                    <img data-scroll data-scroll-speed="2"
+                        src="https://cdn.sanity.io/images/w8f1ak3c/production/a54b969c847029357a401e2d8ea5d52abd5451d0-2250x1500.jpg/DSC0051_Dexter%20Kim%20copy.jpg?rect=675,0,900,1500&w=640&h=1067&fit=min&auto=format"
                         alt="" srcset="">
                 </div>
                 <div class="poster" id="poster2">
-                    <img src="https://cdn.sanity.io/images/w8f1ak3c/production/bc3f529e3f10086db91822f615caf549a260362d-1500x2250.jpg/DSC0083_Dexter%20Kim.jpg?rect=75,0,1350,2250&w=640&h=1067&fit=min&auto=format"
+                    <img data-scroll data-scroll-speed="2"
+                        src="https://cdn.sanity.io/images/w8f1ak3c/production/bc3f529e3f10086db91822f615caf549a260362d-1500x2250.jpg/DSC0083_Dexter%20Kim.jpg?rect=75,0,1350,2250&w=640&h=1067&fit=min&auto=format"
                         alt="" srcset="">
                 </div>
                 <div class="poster" id="poster3">
-                    <img src="https://cdn.sanity.io/images/w8f1ak3c/production/d3151106849ff2494d66916cf554c68a0603444d-902x1500.png/Rectangle%20220.png?rect=1,0,900,1500&w=640&h=1067&fit=min&auto=format"
+                    <img data-scroll data-scroll-speed="2"
+                        src="https://cdn.sanity.io/images/w8f1ak3c/production/d3151106849ff2494d66916cf554c68a0603444d-902x1500.png/Rectangle%20220.png?rect=1,0,900,1500&w=640&h=1067&fit=min&auto=format"
                         alt="" srcset="">
                 </div>
             </div>
 
         </div>
+        <div id="page4">
+            <div id="page4-left">
+                WE BELIEVE IN PEOPLE,<br>UNTIL THEY BELIEVE IN <br>THEMSELVES AGAIN.
+            </div>
+            <div id="page4-right">
+                Everything we do is designed to rebuild self worth and independence, in order to break free from the
+                cycle of disadvantage.
+                <br><br>
+                With every purchase you make with us, you're helping to change the course of someone's life; you're
+                walking alongside vulnerable women as they find their way home again.
+                <br><br>
+                <a href="#" id="page4-btn">
+                    SHOP TO SUPPORT
+                </a>
+            </div>
+            <div class="empty1">
+
+            </div>
+        </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="script.js"></script>
 </body>
 
