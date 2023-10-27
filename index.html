@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -21,11 +22,30 @@
 <body>
     <div id="cursor">
     </div>
-    <div class="main">
-        <div id="page1">
-            <div id="nav">
-                Nav bar
+    <div id="nav">
+        <div class="logo" id="logo">
+            <div><img id="main-logo" src="./assets/main_logo.png" alt=""></div>
+            <div id="sub-logo"><img src="./assets/logo.png" alt=""></div>
+        </div>
+        <div class="nav-right">
+            <div class="nav-list" id="nav-list">
+                <a href="" class="animated-btn nav-btn">SHOP</a>
+                <a href="" class="animated-btn nav-btn">CATERING <i class="ri-arrow-right-up-line"></i></a>
+                <a href="" class="animated-btn nav-btn">DONATE</a>
             </div>
+            <div class="nav-icon">
+                <!-- <i class="ri-equal-line"></i>
+                <i class="ri-menu-3-fill"></i>
+                <i class="ri-menu-line"></i>
+                <i class="ri-menu-5-line"></i>
+                <i class="ri-menu-fill"></i> -->
+                <i id="nav-i-menu" class="ri-menu-line"></i>
+                <i id="nav-i-cart" class="ri-shopping-cart-line"></i>
+            </div>
+        </div>
+    </div>
+    <div class="main" id="main">
+        <div id="page1">
             <div id="main-text">
                 <h1 id="change">CHANGE</h1>
                 <h1>THE COURSE</h1>
@@ -153,7 +173,7 @@
                 With every purchase you make with us, you're helping to change the course of someone's life; you're
                 walking alongside vulnerable women as they find their way home again.
                 <br><br>
-                <a href="#" id="page4-btn">
+                <a href="#" id="page4-btn" class="animated-btn">
                     SHOP TO SUPPORT
                 </a>
             </div>
@@ -225,28 +245,83 @@
                     for independence. We believe that through experiences that promote love and respect, we can spark
                     and nurture a sense of self-worth for those on the path of healing.
                     <br><br>
-                    <a href="#" id="page4-btn">
+                    <a href="#" class="animated-btn how-do-it-btn">
                         HERE'S HOW WE DO IT
                     </a>
                 </div>
             </div>
             <div class="page7-sub-div">
-                <img src="https://cdn.sanity.io/images/w8f1ak3c/production/943f8f43b76b4e030f41deddca1edd44170fee39-5504x8256.jpg/Christina-Maria-Jes-Lindsay-9143.jpg?fp-x=0.5&fp-y=0.5&w=640&h=947&fit=crop&crop=focalpoint&auto=format"
+                <img data-scroll data-scroll-speed="-1"
+                    src="https://cdn.sanity.io/images/w8f1ak3c/production/943f8f43b76b4e030f41deddca1edd44170fee39-5504x8256.jpg/Christina-Maria-Jes-Lindsay-9143.jpg?fp-x=0.5&fp-y=0.5&w=640&h=947&fit=crop&crop=focalpoint&auto=format"
                     alt="" srcset="">
             </div>
             <div class="page7-sub-div">
-                <img src="https://cdn.sanity.io/images/w8f1ak3c/production/84da7b8b510e006ce0ca22769d93bb6c044945f6-5504x8256.jpg/Patricia-Work-Work-Good-Stories-Two-Good-Co.jpg?rect=0,56,5504,8144&w=640&h=947&fit=min&auto=format"
+                <img data-scroll data-scroll-speed="-1"
+                    src="https://cdn.sanity.io/images/w8f1ak3c/production/84da7b8b510e006ce0ca22769d93bb6c044945f6-5504x8256.jpg/Patricia-Work-Work-Good-Stories-Two-Good-Co.jpg?rect=0,56,5504,8144&w=640&h=947&fit=min&auto=format"
                     alt="" srcset="">
             </div>
         </div>
-
+        <div class="email">
+            <input type="email" class="email-input" name="" id="email-input" value=""
+                placeholder="ENTER YOUR EMAIL ADDRESS FOR GOOD">
+            <i class="fa-solid fa-arrow-right" id="arrow-right"></i>
+            <i class="ri-corner-down-left-line" id="arrow-down"></i>
+        </div>
+        <hr id=" email-hr">
         <div id="page8">
-
+            <div class="page8-sub page8-sub1">
+                <div class="page8-sub-head">CONNECT WITH US</div>
+                <br>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                    <li>Linkedin</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+            <div class="page8-sub page8-sub2">
+                <img src="./assets/logo.png" alt="" srcset="">
+                <div class="footer">
+                    <div id="copyright">© TWO GOOD CO. 2023</div>
+                    <div>TERMS OF USE</div>
+                    <div>PRIVACY POLICY</div>
+                </div>
+            </div>
+            <div class="page8-sub page8-sub3">
+                <div class="page8-sub-head">THE NITTY GRITTIES</div>
+                <br>
+                <ul>
+                    <li>Good Things FAQs</li>
+                    <li>Good Food FAQs</li>
+                    <li>Good Places</li>
+                    <li>Pathways</li>
+                    <li>Careers</li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer-text">
+            We are proud and privileged to have our home on this land, and to be able to continue the long
+            tradition of
+            community coming together around food, begun thousands of years ago by First Nations peoples. As
+            we stand
+            together on this unceded land, we acknowledge our First Nations people, are the original
+            custodians of this
+            land, and we recognise their deep connection to land, water, sky and community which continues
+            today. We pay
+            our deep respects to community elders, past, present and emerging, for they hold the memories,
+            the
+            traditions, the culture and hopes of Aboriginal and Torres Strait Islander peoples. Always was,
+            always will
+            be Aboriginal land.
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
         integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
 </body>

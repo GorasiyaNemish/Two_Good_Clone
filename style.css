@@ -22,20 +22,97 @@ body{
     transform: translate(-50%,-50%) scale(0);
 }
 .main{
-    padding: 1vw 1vw;
+    padding: 1vw 1.6vw;
     /* background: red; */
-    min-height: 100vh;
+    /* min-height: 100vh; */
     width: 100%;
     /* overflow: hidden; */
 }
+.animated-btn{
+    color: black;
+    font-family: "ABC Social Mono",sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    display:inline-block;
+    font-size: 12px;
+  }
+.animated-btn::after{
+    margin-top: 5px;
+    content: '';
+    display: block;
+    background: black;
+    width: 100%;
+    height: 1px;
+    transform-origin: left top;
+    transform: scaleX(1);
+    transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
+}
+.animated-btn:hover::after{
+    transform-origin: right top;
+    transform: scaleX(0);
+}
+.nav-btn::after{
+    transform-origin: right top;
+    transform: scaleX(0);
+}
+.nav-btn:hover::after{
+    transform-origin: left top;
+    transform: scaleX(1);
+}
+
 #page1{
     height: 75vh;
     /* background: green; */
     font-family: futura;
     padding-bottom: -10vh;
 }
-.main #page1 #nav{
-    height: 20vh;
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: sticky;
+    margin: 3.5vh 1.6vw;
+    z-index: 99;
+}
+#nav #logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 80px;
+    overflow: hidden;
+    /* background: red; */
+}
+#nav #logo img{
+    height: 80px;
+}
+#nav .nav-right{
+    display: flex;
+    align-items: center;
+    /* margin: 5px 0; */
+}
+
+#nav .nav-right .nav-list a{
+    margin: 0 30px;
+}
+#nav .nav-right .nav-icon{
+    /* border: 2px solid red; */
+    background: #F7F7F7;
+    border-radius: 35px;
+    padding: 5px 10px;
+    margin-left: 30px;
+    transition: all 0.3s ease;
+}
+#nav .nav-right .nav-icon:hover{
+    cursor: pointer;
+    scale: 1.2;
+}
+#nav .nav-right .nav-icon #nav-i-menu{
+    margin-right: 30px;
+}
+#nav .nav-right .nav-icon #nav-i-cart{
+    margin-left: 30px;
 }
 .main #page1 #main-text{
     height: 60vh;
@@ -123,11 +200,12 @@ body{
 #page3{
     display: flex;
     flex-direction: column;
-    padding: 0 1vw;
+    /* padding: 0 1vw; */
     /* background: blueviolet; */
 }
 hr{
     border: 1px solid black;
+    margin-top: 4px;
 }
 #quote{
     display: flex;
@@ -232,31 +310,7 @@ hr{
     flex: 2;
     line-height: 22px;
 }
-#page4-btn{
-  color: black;
-  font-family: "ABC Social Mono",sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-  position: relative;
-  text-decoration: none;
-  display:inline-block;
-  font-size: 12px;
-}
-#page4-btn::after{
-    margin-top: 6px;
-    content: '';
-    display: block;
-    background: black;
-    width: 100%;
-    height: 1px;
-    transform-origin: left top;
-    transform: scaleX(1);
-    transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
-}
-#page4-btn:hover::after{
-    transform-origin: right top;
-    transform: scaleX(0);
-}
+
 .empty1{
     flex: 1;
 }
@@ -299,15 +353,149 @@ hr{
 /* #page5 .item img{
     opacity: 1;
 } */
-
+#page6{
+    width: 100%;
+}
 
 #page7{
+    margin-top: 10vh;
     display: flex;
+    justify-content: space-between;
 }
 #page7 .page7-sub-div{
-    width: 33%;
-    background: red;
+    width: 32.5%;
+    height: 90vh;
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
+#page7 .page7-sub-div h1{
+    font-size: 1.5vw;
+    margin-bottom: 20px;
+}
+#page7 a:after{
+    margin-top: 4px;
+}
+#page7 .page7-sub-div .left-text{
+    padding-top: 10px;
+    /* background: yellow; */
+    font-family: sans-serif;
+    padding-right: 10vw;
+    flex: 2;
+    line-height: 25px;
+}
+#page7 .page7-sub-div img{
+    width: 100%;
+    height: 100%;
+}
+.email{
+    margin: 10vh 0 1vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.email i{
+    font-size: 1.3vw;
+    font-weight: 900;
+}
+#arrow-down{
+    display: none;
+}
+.email input{
+    height: auto;
+    width: 100%;
+    font-size: 2.3vw;
+    font-family: futura;
+    background: #F7F7F7;
+    border: none;
+    outline: none;
+}
+.email input::placeholder{
+    color: black;
+}
+#email-hr{
+    border: 1px solid grey;
+}
+
+#page8{
+    /* background: red; */
+    margin-top: 25vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: "ABC Social Mono",sans-serif;
+}
+#page8 .page8-sub{
+    /* background: red; */
+}
+#page8 .page8-sub ul{
+    list-style: none;
+}
+#page8 .page8-sub img{
+    height: 280px;
+    width: 280px;
+    /* transform: scale(1.2); */
+}
+#page8 .page8-sub .page8-sub-head{
+    font-size: 0.8vw;
+    color: grey;
+}
+#page8 .page8-sub2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* width: 30vw; */
+}
+#page8 .page8-sub2 .footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+#page8 .page8-sub2 .footer div{
+    /* background: red; */
+    margin: 20px;
+    color: grey;
+}
+#page8 .page8-sub3 ul{
+    text-align: end;
+}
+#page8 .page8-sub3 .page8-sub-head{
+    /* background: red; */
+    text-align: end;
+}
+#page8 .page8-sub ul li{
+    font-weight: 400;
+    font-size: 1vw;
+    font-weight: 1px;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+}
+#page8 .page8-sub ul li:hover{
+    cursor: pointer;
+    color: grey;
+}
+
+#footer-text{
+    text-align: center;
+    margin: 10vh 0;
+    padding: 0 15vw;
+    font-family: "ABC Social Mono",sans-serif;
+    line-height: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
