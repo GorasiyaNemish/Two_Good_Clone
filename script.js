@@ -33,44 +33,62 @@ ScrollTrigger.refresh();
 }
 locomotiveAnimation();
 
-gsap.to("#nav #logo img",{
-    transform: `translateY(-100%)`,
-    scrollTrigger:{
-        trigger: "#page1",
-        scroller:"#main",
-        // markers: true,
-        start: "top 10%",
-        end: "top 5%",
-        scrub: true
-    } 
-})
-gsap.to("#nav .nav-right #nav-list",{
-    transform: "translateY(-100%)",
-    opacity:0,
-    scrollTrigger:{
-        trigger: "#page1",
-        scroller:"#main",
-        // markers: true,
-        start: "top 10%",
-        end: "top 5%",
-        scrub: true
-    } 
-})
+function navbarAnimation(){
+    gsap.to("#nav #logo img",{
+        transform: `translateY(-100%)`,
+        scrollTrigger:{
+            trigger: "#page1",
+            scroller:"#main",
+            // markers: true,
+            start: "top 10%",
+            end: "top 2%",
+            scrub: true
+        } 
+    })
+    
+    gsap.to("#nav .nav-right #nav-list",{
+        display:"none",
+        scrollTrigger:{
+            trigger: "#page1",
+            scroller:"#main",
+            // markers: true,
+            start: "top 10%",
+            end: "top 5%",
+            scrub: true
+        } 
+    })
+}
+navbarAnimation();
 
-const text = document.querySelector("#border-text p");
+function textAnimation(){
+    gsap.from("#main #page1 #main-text h1",{
+        y:120,
+        opacity:0,
+        delay : 0.6,
+        duration: 0.5,
+        stagger : 0.3
+    })
+}
+textAnimation();
 
+function rotatingCircleAnimation(){
+    const text = document.querySelector("#border-text p");
 text.innerHTML = text.innerHTML.split("").map((char,i)=> `<span style="transform: rotate(${i*10}deg)">${char}</span>`).join("");
+}
+rotatingCircleAnimation();
 
 
-const cursor = document.getElementById("cursor");
 function cursorAnimation(event) {
+    const cursor = document.getElementById("cursor");
     gsap.to(cursor,{
         top: event.y,
         left: event.x,
         transform: `translate(-50%,-50%) scale(1)`,
     })
 };
+
 function cursorOut(event) {
+    const cursor = document.getElementById("cursor");
     gsap.to(cursor,{
         top: event.y,
         left: event.x,
@@ -78,7 +96,8 @@ function cursorOut(event) {
     })
 }
 
-const email_input = document.getElementById("email-input");
+function emailTransition() {
+    const email_input = document.getElementById("email-input");
 const arrow_right = document.getElementById("arrow-right");
 const arrow_down = document.getElementById("arrow-down");
 
@@ -97,11 +116,37 @@ email_input.addEventListener("blur",function(){
     arrow_down.style.display = "none";
     arrow_right.style.display = "block";
 })
+}
+emailTransition();
 
-const copyright = document.getElementById("copyright");
 function setCopyrightYear() {
+    const copyright = document.getElementById("copyright");
     const date = new Date();
     const year = date.getFullYear();
     copyright.innerHTML = `© TWO GOOD CO. ${year}`;
 }
 setCopyrightYear();
+
+
+function reviews_carousel(){
+    const buttons = document.querySelectorAll(".slide-btn");
+const slides = document.querySelectorAll(".slide");
+const slider_msgs = document.querySelectorAll(".slider-msg");
+
+buttons.forEach((button,index)=>{
+    button.addEventListener("click",()=>{
+        buttons.forEach((button)=>{
+            button.style.background = "#F7F7F7";
+        })
+        slider_msgs.forEach((msg)=>{
+            msg.style.display = "none";
+        })
+        slider_msgs[index].style.display = "block";
+        button.style.background = "black";
+        slides.forEach((slide) => {
+            slide.style.transform = `translateX(-${index*100}%)`;
+        });
+    })
+})
+}
+reviews_carousel();

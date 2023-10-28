@@ -63,7 +63,6 @@ body{
 }
 
 #page1{
-    height: 75vh;
     /* background: green; */
     font-family: futura;
     padding-bottom: -10vh;
@@ -106,7 +105,6 @@ body{
 }
 #nav .nav-right .nav-icon:hover{
     cursor: pointer;
-    scale: 1.2;
 }
 #nav .nav-right .nav-icon #nav-i-menu{
     margin-right: 30px;
@@ -120,11 +118,18 @@ body{
     justify-content: flex-end;
     flex-direction: column;
     align-items: center;
-    margin-bottom: -20vw;
+    /* margin-bottom: -20vw; */
+    /* background: blue; */
 }
 .main #page1 #main-text h1{
     font-size: 15vw;
     letter-spacing: -0.5vw;
+}
+.main #page1 #main-text #the-course{
+    /* background: yellow; */
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
 }
 .main #page1 #main-text #change{
     line-height: 5.5vw;
@@ -141,6 +146,7 @@ body{
     padding: 0 5vw;
     font-family: futura;
     overflow: hidden;
+    margin-top: -12vh;
 }
 
 #page2 img{
@@ -207,7 +213,7 @@ hr{
     border: 1px solid black;
     margin-top: 4px;
 }
-#quote{
+.quote{
     display: flex;
     justify-content: space-between;
     margin-bottom: 1px;
@@ -321,6 +327,7 @@ hr{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    cursor: pointer;
 }
 
 #page5 .item{
@@ -350,15 +357,91 @@ hr{
     font-size: 10px;
     margin-top: 10px;
 }
-/* #page5 .item img{
-    opacity: 1;
-} */
+
 #page6{
     width: 100%;
-}
-
-#page7{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 10vh;
+    /* background: yellow; */
+}
+#page6 .quote{
+    width: 100%;
+}
+#page6 hr{
+    /* background: red; */
+    width: 100%;
+    /* border: 2px solid black; */
+}
+#page6 .reviews{
+    margin-top: 5vh;
+}
+#page6 .reviews .slider{
+    display: flex;
+    font-family: sans-serif;
+    /* position: relative; */
+    margin: 30px 0;
+    /* width: 100%; */
+    position: absolute;
+    left: 48%;
+}
+#page6 .reviews .slider .slide{
+    width: 20vw;
+    font-size: 1.5vw;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    transform: translateX(-100%);
+}
+#page6 .reviews .slider .slide .slide-btn{
+    height: 15px;
+    width: 15px;
+    margin: 5px 0 20px 0;
+    /* background: black; */
+    border: 1px solid black;
+    border-radius: 50%;
+}
+#page6 .reviews .slider .slide #first-slide-btn{
+    background: black;
+}
+#page6 .reviews .slider-msg{
+    /* background: red; */
+    text-align: center;
+    font-size: 3.8vw;
+    padding: 7vh 20%;
+    line-height: 4vw;
+    margin-top: 20vh;
+    display: none;
+    /* transition: all 1s ease; */
+}
+#page6 .reviews #first-slider-msg{
+    display: block;
+}
+#page6 #send-msg{
+    /* background: blue; */
+    padding-top: 5vh;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+#page6 #send-msg button{
+    background: black;
+    color: white;
+    padding: 20px 65px;
+    border-radius: 50px;
+    font-weight: 700;
+    cursor: pointer;
+}
+#page6 #send-msg p{
+    padding: 30px 70px;
+}
+#page7{
+    margin-top: 20vh;
     display: flex;
     justify-content: space-between;
 }
@@ -413,6 +496,9 @@ hr{
 }
 .email input::placeholder{
     color: black;
+}
+.email i{
+    cursor: pointer;
 }
 #email-hr{
     border: 1px solid grey;
