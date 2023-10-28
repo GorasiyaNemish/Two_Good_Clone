@@ -68,6 +68,13 @@ function textAnimation(){
         duration: 0.5,
         stagger : 0.3
     })
+    gsap.from("#main #page2",{
+        y:120,
+        opacity:0,
+        delay : 1.7,
+        duration: 0.5,
+        stagger : 0.3
+    })
 }
 textAnimation();
 

@@ -10,6 +10,7 @@
 body{
     font-family: futura;
     background: #F7F7F7;
+    /* overflow: hidden !important; */
 }
 #cursor{
     height: 200px;
@@ -26,7 +27,7 @@ body{
     /* background: red; */
     /* min-height: 100vh; */
     width: 100%;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 .animated-btn{
     color: black;
@@ -65,7 +66,8 @@ body{
 #page1{
     /* background: green; */
     font-family: futura;
-    padding-bottom: -10vh;
+    /* padding-bottom: -10vh; */
+    padding: 0;
 }
 #nav{
     display: flex;
@@ -112,8 +114,10 @@ body{
 #nav .nav-right .nav-icon #nav-i-cart{
     margin-left: 30px;
 }
+
 .main #page1 #main-text{
-    height: 60vh;
+    /* height: 60vh; */
+    padding-top: 10vh;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
@@ -136,9 +140,9 @@ body{
 }
 
 #page2{
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
-    /* background: blue; */
+    /* background: yellow; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -146,7 +150,7 @@ body{
     padding: 0 5vw;
     font-family: futura;
     overflow: hidden;
-    margin-top: -12vh;
+    /* margin-top: -12vh; */
 }
 
 #page2 img{
@@ -229,6 +233,7 @@ hr{
     height: 90vh;
     width: 100%;
     margin-top: 15px;
+    /* background: red; */
 }
 .posters .poster{
     height: 100%;
@@ -237,6 +242,8 @@ hr{
     justify-content: center;
     align-items: center;
     position: relative;
+    /* background: yellow; */
+    overflow: hidden;
 }
 .posters .poster img{
     width: 100%;
@@ -259,6 +266,7 @@ hr{
 .posters .poster .middle-box:hover{
     height: 250px;
     border-radius: 30px;
+    cursor: pointer;
 }
 .posters .poster .middle-box .visible{
     width: 100%;
@@ -298,27 +306,29 @@ hr{
     display: flex;
     width: 100%;
     /* background: blue; */
-    padding: 0 1vw;
+    /* padding: 0 1vw; */
     align-items: flex-start;
 }
 
 #page4-left{
-    flex: 6;
     /* background: green; */
     font-size: 3.5vw;
     line-height: 3.8vw;
+    width: 45%;
 }
 #page4-right{
     padding-top: 10px;
     /* background: yellow; */
     font-family: sans-serif;
-    padding-left: 2vw;
-    flex: 2;
     line-height: 22px;
+    width: 23%;
 }
 
 .empty1{
-    flex: 1;
+    width: 22.6%;
+}
+.empty2{
+    width: 9.4%;
 }
 
 
@@ -328,6 +338,7 @@ hr{
     flex-wrap: wrap;
     justify-content: space-evenly;
     cursor: pointer;
+    margin-top: 3vh;
 }
 
 #page5 .item{
@@ -342,15 +353,17 @@ hr{
 }
 
 #page5 .item img{
-    height: 70vh;
+    height: 80%;
     width: 90%;
-    object-fit: cover;
+    /* object-fit: cover; */
     /* opacity: 0; */
     /* transition: opacity 0.5s ease; */
 }
 
 #page5 .item p{
     font-size: 12px;
+    text-align: center;
+    margin-top: 3vh;
 }
 
 #page5 .item .price{
@@ -365,10 +378,13 @@ hr{
     justify-content: center;
     align-items: center;
     margin-top: 10vh;
-    /* background: yellow; */
+    /* background: blue; */
 }
 #page6 .quote{
     width: 100%;
+}
+#page6 .quote #right-quote{
+    text-align: right;
 }
 #page6 hr{
     /* background: red; */
@@ -377,6 +393,7 @@ hr{
 }
 #page6 .reviews{
     margin-top: 5vh;
+    /* overflow: hidden; */
 }
 #page6 .reviews .slider{
     display: flex;
@@ -392,7 +409,7 @@ hr{
     font-size: 1.5vw;
     transition: all 0.5s ease;
     cursor: pointer;
-    transform: translateX(-100%);
+    /* transform: translateX(-100%); */
 }
 #page6 .reviews .slider .slide .slide-btn{
     height: 15px;
@@ -413,7 +430,7 @@ hr{
     line-height: 4vw;
     margin-top: 20vh;
     display: none;
-    /* transition: all 1s ease; */
+    transition: all 1s ease;
 }
 #page6 .reviews #first-slider-msg{
     display: block;
@@ -438,40 +455,54 @@ hr{
     cursor: pointer;
 }
 #page6 #send-msg p{
-    padding: 30px 70px;
+    padding: 30px 30px;
 }
 #page7{
-    margin-top: 20vh;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-between;
+    /* background: yellow; */
+    align-items: flex-start;
+}
+#page7 .page7-text{
+    width: 33vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    /* background:green; */
+    padding-right: 11vw;
+    /* overflow: hidden; */
+}
+#page7 .page7-right{
+    height: 90vh;
+    width: 67wh;
+    /* background: yellow; */
+    overflow: hidden;
     display: flex;
     justify-content: space-between;
 }
-#page7 .page7-sub-div{
-    width: 32.5%;
-    height: 90vh;
-    /* background: red; */
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
+#page7 .page7-right .page7-img{
+    width: 49%;
 }
-#page7 .page7-sub-div h1{
-    font-size: 1.5vw;
-    margin-bottom: 20px;
-}
-#page7 a:after{
-    margin-top: 4px;
-}
-#page7 .page7-sub-div .left-text{
-    padding-top: 10px;
-    /* background: yellow; */
-    font-family: sans-serif;
-    padding-right: 10vw;
-    flex: 2;
-    line-height: 25px;
-}
-#page7 .page7-sub-div img{
+#page7 .page7-right .page7-img img{
     width: 100%;
     height: 100%;
 }
+#page7 .page7-text h1{
+    font-size: 1.5vw;
+    margin-bottom: 25px;
+    /* background: pink; */
+}
+#page7 .page7-text .left-text{
+    font-family: sans-serif;
+    line-height: 25px;
+}
+#page7 .page7-text .left-text a:after{
+    margin-top: 4px;
+}
+
+
 .email{
     margin: 10vh 0 1vh 0;
     display: flex;
@@ -479,7 +510,7 @@ hr{
     align-items: center;
 }
 .email i{
-    font-size: 1.3vw;
+    font-size: 2vw;
     font-weight: 900;
 }
 #arrow-down{
@@ -512,16 +543,12 @@ hr{
     align-items: flex-start;
     font-family: "ABC Social Mono",sans-serif;
 }
-#page8 .page8-sub{
-    /* background: red; */
-}
 #page8 .page8-sub ul{
     list-style: none;
 }
 #page8 .page8-sub img{
     height: 280px;
     width: 280px;
-    /* transform: scale(1.2); */
 }
 #page8 .page8-sub .page8-sub-head{
     font-size: 0.8vw;
@@ -576,45 +603,6 @@ hr{
 
 
 
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 768px) {
-        #circle{
-            top: 25%;
-            left: 60%;
-        }
-        #page2 img {
-            max-width: none;
-            width: 80%;
-            height: 60vh;
-          }
-      }
-@media screen and (max-width: 600px) {
-    #circle{
-        top: 30%;
-        left: 50%;
-    }
-    #page2 img {
-      max-width: none;
-      width: 80%;
-      height: 50vh;
-    }
-    #page2 #buy-circle{
-        width: 160px;
-        height: 160px;
-    }
-    #page2 #buy-circle #border-text span{
-        font-size: 0.8em;
-        transform-origin: 0 70px;
-    }
-  }
 
 
   

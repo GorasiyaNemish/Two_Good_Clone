@@ -1,0 +1,234 @@
+@media screen and (max-width : 1145px) {
+    #page3 .posters{
+        flex-direction: column;
+        height: auto;
+    }
+    #page3 .posters .poster{
+        width: 100%;
+        height: 150vh;
+    }
+    .posters .poster img{
+        height: 120%;
+    }
+    #page3 .posters .poster .middle-box{
+        top: 40%;
+    }
+    #page4{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+    #page4-left{
+        width: 100%;
+        margin-bottom: 5vh;
+    }
+    #page4-right{
+        width: 100%;
+        padding: 0;
+    }
+    #page5 .item{
+        height: 70vh;
+    }
+    #page5 .item img{
+        height: 80%;
+        width: 100%;
+    }
+    #page6 .reviews .slider .slide{
+        font-size: 20px;
+    }
+    #page6 .reviews .slider-msg{
+        padding: 4vh 10%;
+    }
+    #page6 #send-msg button{
+        min-width: 30vw;
+        padding: 20px 20px;
+    }
+    #page6 #send-msg{
+        width: 35%;
+    }
+    #page6 #send-msg p{
+        padding: 30px 0;
+    }
+    #page7{
+        flex-direction: column;
+    }
+    #page7 .page7-right{
+        width: 100%;
+        padding: 0 0.5vw;
+    }
+    #page7 .page7-text{
+        order: 2;
+        width: 67vw;
+        padding-right: 0;
+        margin-top: 4vh;
+    }
+    #page7 .page7-text h1{
+        font-size: 2.5vw;
+        margin-bottom: 4vh;
+    }
+    #page7 .page7-text .left-text{
+        font-size: 23px;
+        line-height: 30px;
+    }
+    #page7 .page7-text .left-text a{
+        font-size: 15px;
+    }
+    .email i{
+        font-size: 4vw;
+    }
+}
+@media screen and (max-width: 768px) {
+    #nav .nav-right .nav-list{
+        display: none !important;
+    }
+    #page1{
+        height: auto;  
+    }
+    #main-text{
+        height: auto;   
+    }
+
+        #circle{
+            top: 25%;
+            left: 60%;
+        }
+        #page2{
+            margin-bottom: 5vh;
+        }
+        #page2 img {
+            max-width: none;
+            width: 80%;
+            height: 100vh;
+          }
+          #page3 .posters .poster .middle-box{
+            top: 50%;
+        }
+        #page3 .posters .poster{
+            height: 120vh;
+        }
+        #page4-left{
+            font-size: 40px;
+            line-height: 40px;
+        }
+        #page5 .item{
+            height: 60vh;
+        }
+        #page5 .item img{
+            height: 60%;
+            width: 100%;
+        }
+        #page6 .reviews .slider{
+            left: 35%;
+        }
+        #page6 .reviews .slider .slide{
+            width: 25vw;
+        }
+        #page6 #send-msg button{
+            min-width: 40vw;
+            padding: 20px 10px;
+        }
+        #page6 #send-msg{
+            width: 50%;
+        }
+        #page7 .page7-right{
+            height: 60vh;
+        }
+        #page7 .page7-text{
+            width: 100%;
+            padding: 0;
+        }
+        #page7 .page7-text h1{
+            font-size: 4.5vh;
+        }
+        #page7 .page7-text .left-text{
+            font-size: 18px;
+            line-height: 25px;
+        }
+        .email input{
+            font-size: 15px;
+        }
+        .email i{
+            font-size: 4vw;
+        }
+        
+}
+@media screen and (max-width: 600px) {
+    #circle{
+        top: 30%;
+        left: 50%;
+    }
+    #page2{
+        /* background: black; */
+        padding: 25px;
+        height: auto;
+        margin-bottom: 5vh;
+    }
+    #page2 img {
+      max-width: none;
+      width: 80%;
+      height: 60vh;
+    }
+    #page2 #buy-circle{
+        width: 160px;
+        height: 160px;
+    }
+    #page2 #buy-circle #border-text span{
+        font-size: 0.8em;
+        transform-origin: 0 70px;
+    }
+    #page3 .posters .poster .middle-box{
+        top: 45%;
+    }
+    #page3 .posters .poster{
+        height: 90vh;
+    }
+    #page4-left{
+        font-size: 30px;
+        line-height: 30px;
+    }
+    #page4-right{
+        line-height: 15px;
+        font-size: 13px;
+    }
+    #page5 .item{
+        height: 40vh;
+    }
+    #page5 .item img{
+        height: 60%;
+        width: 100%;
+    }
+    #page6 .reviews .slider .slide{
+        font-size: 14px;
+    }
+    #page6 .reviews .slider-msg{
+        padding: 1vh 10%;
+        font-size: 5vw;
+        line-height: 5vw;
+    }
+    #page6 #send-msg button{
+        min-width: 70vw;
+        padding: 15px 0;
+        font-size: 12px;
+    }
+    #page6 #send-msg{
+        width: 70%;
+    }
+    #page7 .page7-right{
+        height: 30vh;
+    }
+    #page7 .page7-text h1{
+        font-size: 2.5vh;
+    }
+    #page7 .page7-text .left-text{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .email input{
+        font-size: 12.5px;
+    }
+    .email i{
+        font-size: 4vw;
+    }
+}
