@@ -11,6 +11,7 @@ body{
     font-family: futura;
     background: #F7F7F7;
     /* overflow: hidden !important; */
+    /* height: auto; */
 }
 #cursor{
     height: 200px;
@@ -80,10 +81,12 @@ body{
 #nav #logo{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
     height: 80px;
     overflow: hidden;
     /* background: red; */
+    z-index: 5;
+    cursor: pointer;
 }
 #nav #logo img{
     height: 80px;
@@ -264,7 +267,7 @@ hr{
     transition: all 0.3s linear;
 }
 .posters .poster .middle-box:hover{
-    height: 250px;
+    height: 280px;
     border-radius: 30px;
     cursor: pointer;
 }
@@ -286,7 +289,9 @@ hr{
     justify-content: space-evenly;
     align-items: flex-start;
 }
-
+.posters .poster .middle-box .not-visible .not-visible-text{
+    margin-top: 4vh;
+}
 .posters .poster .middle-box .not-visible .sub-item{
     width: 150px;
     display: flex;
@@ -543,15 +548,19 @@ hr{
     align-items: flex-start;
     font-family: "ABC Social Mono",sans-serif;
 }
+#page8 .page8-sub{
+    /* background: green; */
+}
 #page8 .page8-sub ul{
     list-style: none;
 }
 #page8 .page8-sub img{
     height: 280px;
     width: 280px;
+    cursor: pointer;
 }
 #page8 .page8-sub .page8-sub-head{
-    font-size: 0.8vw;
+    font-size: 17px;
     color: grey;
 }
 #page8 .page8-sub2{
@@ -570,6 +579,7 @@ hr{
     /* background: red; */
     margin: 20px;
     color: grey;
+    cursor: pointer;
 }
 #page8 .page8-sub3 ul{
     text-align: end;
@@ -580,7 +590,7 @@ hr{
 }
 #page8 .page8-sub ul li{
     font-weight: 400;
-    font-size: 1vw;
+    font-size: 17px;
     font-weight: 1px;
     margin: 3px 0;
     transition: all 0.3s ease;
@@ -592,7 +602,7 @@ hr{
 
 #footer-text{
     text-align: center;
-    margin: 10vh 0;
+    margin: 10vh 0 20vh 0;
     padding: 0 15vw;
     font-family: "ABC Social Mono",sans-serif;
     line-height: 25px;

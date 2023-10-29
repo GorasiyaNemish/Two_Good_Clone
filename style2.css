@@ -39,7 +39,8 @@
         font-size: 20px;
     }
     #page6 .reviews .slider-msg{
-        padding: 4vh 10%;
+        padding: 7vh 10%;
+        /* margin-top: 5vh; */
     }
     #page6 #send-msg button{
         min-width: 30vw;
@@ -78,10 +79,35 @@
     .email i{
         font-size: 4vw;
     }
+    #page8 .page8-sub img{
+        height: 200px;
+        width: 200px;
+    }
+    #page8 .page8-sub2 .footer{
+        width: 120%;
+        font-size: 12px;
+        margin: 5vh 0 0 0;
+    }
+    .page8-sub1 , .page8-sub3{
+        /* width: fit-content; */
+    }
+    #page8 .page8-sub-head{
+        width: max-content;
+    }
 }
 @media screen and (max-width: 768px) {
+    
     #nav .nav-right .nav-list{
         display: none !important;
+    }
+    #nav #logo{
+        height: 60px !important;
+    }
+    #nav #logo #sub-logo{
+        margin-top: 18px;
+    }
+    #nav #logo div img{
+        height: 60px !important;
     }
     #page1{
         height: auto;  
@@ -153,6 +179,18 @@
             font-size: 4vw;
         }
         
+        #page8 .page8-sub img{
+            height: 150px;
+            width: 150px;
+        }
+        #page8 .page8-sub2 .footer{
+            margin-top: 10vh;
+            width: 160%;
+        }
+        #page8 .page8-sub2 .footer div{
+            margin: 10px 13px;
+        }
+
 }
 @media screen and (max-width: 600px) {
     #circle{
@@ -231,4 +269,43 @@
     .email i{
         font-size: 4vw;
     }
+    #page8{
+        flex-direction: column;
+        margin-top: 10vh;
+    }
+    #page8 .page8-sub img{
+        display: none;
+    }
+    #page8 .page8-sub1{
+        order: 1;
+        margin-bottom: 5vh;
+    }
+    #page8 .page8-sub2{
+        order: 3;
+    }
+    #page8 .page8-sub3{
+        order: 2;
+    }
+    #page8 .page8-sub3 ul{
+        text-align: left;
+    }
+    #page8 .page8-sub ul li{
+        font-size: 15px;
+    }
+    #page8 .page8-sub2 .footer{
+        margin-top: 3vh;
+        width: 100vw;
+    }
+    #footer-text{
+        font-size: 15px;
+        line-height: 15px;
+        padding: 0;
+        margin: 5vh 0 0 0;
+    }
+    
+}
+@media screen and (max-width: 480px){
+
+
+
 }

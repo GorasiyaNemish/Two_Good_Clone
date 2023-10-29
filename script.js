@@ -45,6 +45,17 @@ function navbarAnimation(){
             scrub: true
         } 
     })
+    // gsap.to("#nav #logo img",{
+    //     transform: `translateY(1%)`,
+    //     scrollTrigger:{
+    //         trigger: "#page7",
+    //         scroller:"#main",
+    //         markers: true,
+    //         start: "top 10%",
+    //         end: "top 2%",
+    //         scrub: true
+    //     } 
+    // })
     
     gsap.to("#nav .nav-right #nav-list",{
         display:"none",
