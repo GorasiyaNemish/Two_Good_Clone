@@ -37,11 +37,11 @@ function navbarAnimation(){
     gsap.to("#nav #logo img",{
         transform: `translateY(-100%)`,
         scrollTrigger:{
-            trigger: "#page1",
+            trigger: "#nav",
             scroller:"#main",
             // markers: true,
-            start: "top 10%",
-            end: "top 2%",
+            start: "top 2%",
+            end: "top -1%",
             scrub: true
         } 
     })
