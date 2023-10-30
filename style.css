@@ -1,3 +1,12 @@
+@font-face {
+    font-family: futura;
+    src: url(./Futura-Bold.ttf);
+}
+@font-face {
+    font-family: "ABC Social Mono";
+    src: url(./ABCSocialMono-Regular.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -6,10 +15,6 @@
 *::selection{
     color: white;
     background: black;
-}
-@font-face {
-    font-family: futura;
-    src: url(Futura-Bold.ttf);
 }
 body{
     font-family: futura;
