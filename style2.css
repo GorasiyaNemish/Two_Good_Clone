@@ -193,6 +193,9 @@
 
 }
 @media screen and (max-width: 600px) {
+    #nav{
+        position: fixed;
+    }
     #circle{
         top: 30%;
         left: 50%;
@@ -303,9 +306,4 @@
         margin: 5vh 0 0 0;
     }
     
-}
-@media screen and (max-width: 480px){
-
-
-
 }
