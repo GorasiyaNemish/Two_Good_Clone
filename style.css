@@ -1,5 +1,5 @@
 @font-face {
-    font-family: futura;
+    font-family: "Fututa-Bold";
     src: url(./Futura-Bold.ttf);
 }
 @font-face {
@@ -17,7 +17,7 @@
     background: black;
 }
 body{
-    font-family: futura;
+    font-family: "Fututa-Bold";
     background: #F7F7F7;
     /* overflow: hidden !important; */
     /* height: auto; */
