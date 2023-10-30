@@ -147,10 +147,9 @@ setCopyrightYear();
 
 
 function reviews_carousel(){
-    const buttons = document.querySelectorAll(".slide-btn");
+const buttons = document.querySelectorAll(".slide-btn");
 const slides = document.querySelectorAll(".slide");
 const slider_msgs = document.querySelectorAll(".slider-msg");
-
 buttons.forEach((button,index)=>{
     button.addEventListener("click",()=>{
         buttons.forEach((button)=>{
@@ -164,6 +163,7 @@ buttons.forEach((button,index)=>{
         slides.forEach((slide) => {
             slide.style.transform = `translateX(-${index*100}%)`;
         });
+
     })
 })
 }
