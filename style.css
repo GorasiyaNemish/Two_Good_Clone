@@ -94,8 +94,8 @@ body{
     flex-direction: column;
     /* justify-content: flex-start; */
     height: 80px;
-    /* overflow: hidden; */
-    background: red;
+    overflow: hidden;
+    /* background: red; */
     z-index: 5;
     cursor: pointer;
 }
