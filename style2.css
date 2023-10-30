@@ -107,7 +107,7 @@
         height: 60px !important;
     }
     #nav #logo #sub-logo{
-        margin-top: -2px;
+        margin-top: -4px;
     }
     #nav #logo div img{
         height: 60px !important;
@@ -234,7 +234,7 @@
         height: 90vh;
     }
     #page3 .posters .other-poster{
-        margin: 1.5vh 0 0 0;
+        margin: 1vh 0 0 0;
     }
     #page4{
         margin-top: 5vh;
