@@ -193,9 +193,12 @@
 
 }
 @media screen and (max-width: 600px) {
-    /* #nav{
-        position: fixed;
-    } */
+    #nav{
+        position: sticky;
+    }
+    .main #page1 #main-text #the-course{
+        margin-top: 10vh;
+    }
     #circle{
         top: 30%;
         left: 50%;
@@ -208,8 +211,8 @@
     }
     #page2 img {
       max-width: none;
-      width: 80%;
-      height: 60vh;
+      width: 90%;
+      height: 50vh;
     }
     #page2 #buy-circle{
         width: 160px;
@@ -224,6 +227,12 @@
     }
     #page3 .posters .poster{
         height: 90vh;
+    }
+    #page3 .posters .other-poster{
+        margin: 4vh 0 0 0;
+    }
+    #page4{
+        margin-top: 5vh;
     }
     #page4-left{
         font-size: 30px;
