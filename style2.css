@@ -201,6 +201,9 @@
         top: 0;
         width: 100%;
     }
+    .main #page1{
+        margin-top: 10vh;
+    }
     .main #page1 #main-text #the-course{
         margin-top: 4vh;
     }
