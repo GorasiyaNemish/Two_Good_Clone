@@ -194,10 +194,12 @@
 }
 @media screen and (max-width: 600px) {
     #nav{
-        position: sticky;
+        position: fixed;
+        top: 0;
+        width: 100%;
     }
     .main #page1 #main-text #the-course{
-        margin-top: 10vh;
+        margin-top: 4vh;
     }
     #circle{
         top: 30%;
@@ -211,8 +213,8 @@
     }
     #page2 img {
       max-width: none;
-      width: 90%;
-      height: 50vh;
+      width: 95%;
+      height: 55vh;
     }
     #page2 #buy-circle{
         width: 160px;
@@ -229,7 +231,7 @@
         height: 90vh;
     }
     #page3 .posters .other-poster{
-        margin: 4vh 0 0 0;
+        margin: 1.5vh 0 0 0;
     }
     #page4{
         margin-top: 5vh;
