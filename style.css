@@ -2,6 +2,7 @@
     font-family: "Fututa-Bold";
     src: url(./Futura-Bold.ttf);
 }
+
 @font-face {
     font-family: "ABC Social Mono";
     src: url(./ABCSocialMono-Regular.ttf);
@@ -75,7 +76,7 @@ body{
 
 #page1{
     /* background: green; */
-    font-family: futura;
+    /* font-family: futura; */
     /* padding-bottom: -10vh; */
     padding: 0;
 }
@@ -195,7 +196,7 @@ body{
     }
 
     #page2 #buy-circle #border-text span{
-        font-family: futura;
+        font-family: sans-serif;
         position: absolute;
         font-size: 0.8em;
         transform-origin: 0 80px;
