@@ -200,12 +200,14 @@
         position: fixed;
         top: 0;
         width: 100%;
+        align-items: center;
+        /* background: blue; */
     }
     .main #page1{
         margin-top: 10vh;
     }
     .main #page1 #main-text #the-course{
-        margin-top: 4vh;
+        margin-top: 2.5vh;
     }
     #circle{
         top: 30%;
