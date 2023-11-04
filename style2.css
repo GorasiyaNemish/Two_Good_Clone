@@ -95,7 +95,10 @@
         width: max-content;
     }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px){
+    #cursor{
+        display: none;
+    }
     
     #nav .nav-right .nav-list{
         display: none !important;
